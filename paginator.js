@@ -1,4 +1,4 @@
-function paginatorCreator({ totalPage: 1, currentPage: 1, countIter: 2 }) {
+function paginatorCreator({ totalPage = 1, currentPage = 1, countIter = 2 }) {
    const paginatorLive = []
    if (totalPage > 1) {
      if (currentPage - 3 > 0) paginatorLive.push(1)
